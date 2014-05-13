@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/header_logo.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome-ie7.css" />
+<link rel="stylesheet" type="text/css" href="dist/css/style.css" />
+
+
+<!--Import the bootstrap JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="dist/js/bootstrap.js"></script>
+<script src="js/Ui_functions.js"></script>
+
+ <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+
+
+
+<!-- end -->
+<title>MarketPlace | Product List</title>
+</head>
+
+<body>
+<!-- header starts here -->
+    <div class="navbar navbar-inverse navbar-fixed-top header_navigation" id="header_outline" role="navigation">
+        <div class="container header_container">
+            <div class="row blog_header">
+                <div class="col-md-12 col-sm-12">
+                	<!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header_nav">
+
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand header_brand" href="index.html"><img src="img/header_logo.png" /></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="header_nav">
+                    	<ul class="nav navbar-nav header_dropdown_nav">
+                        	<li class="dropdown" id="nav_1st_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/1st_dropdown_arrow.png" /> <b class="caret caret_1st"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="nav_2nd_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Now <span class="dropdown_text_separater">|</span><b class="caret caret_2nd"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="nav_3rd_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Offers <span class="dropdown_text_separater dropdown_separater_color">|</span><b class="caret caret_3rd"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+							<li id="nav_text">or</li>
+                            <li class="dropdown" id="nav_5th_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">SELL <span class="dropdown_text_separater">|</span><b class="caret caret_2nd"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav_form_outline">
+                            	<form class="navbar-form navbar-left" role="search">
+                                	<div class="form-group" id="nav_form_outline_form-group">
+                                    	<input type="text" class="form-control" id="nav_form_textbox" value="Search Products">
+                                    </div>
+                                </form>
+                            </li>
+                            <li id="nav_category_outline">
+                                <a href="#"><span>Category</span> <img src="img/category_icon_bar.png" /></a>
+                            </li>
+                            <li id="nav_question">
+                                <a href="#"><img src="img/nav_question.png" /></a>
+                            </li>
+                            <li id="nav_speaker">
+                                <a href="#"><img src="img/nav_speaker.png" /></a>
+                            </li>
+                            <li id="nav_profile">
+                                <a href="#"><img src="img/nav_profile.png" /></a>
+                            </li>
+                            <li id="nav_text_cart"><span>Cart</span><img src="img/nav_cart_image.png" /><span>100</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header ends here -->
+<!-- body starts here -->
+<div id="body_outline">
+	<div class="container">
+    	<!-- top row starts here -->
+        <div class="row product_list_top_row">
+        	<div class="col-md-5 col-sm-5 col-xs-12 col-lg-5">
+            	<div class="product_list_top_row_heading">Products Category Titles</div>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-7">
+            	<div class="pl_top_row_nav_outline">
+                	<div class="pl_top_row_nav_heading pull-left">Main Category:</div>
+                    <div class="pl_top_row_nav pull-left">
+                    	<li><a href="product_list_icons_all.html">All</a></li>
+                        <li><a href="product_list_icons_digital.html" class="pl_top_row_nav_active">Digital Items</a></li>
+                        <li><a href="product_list_icons_physical.html">Physical Items</a></li>
+                    </div>
+                    <div class="pl_top_row_nav_icon_outline pull-left">
+                    	<a href="product_list_icons_digital.html"><img src="img/top_nav_icon1.png" class="pl_top_row_nav_icon" /></a>
+                        <a href="product_list_details_digital.html"><img src="img/top_nav_icon2.png" class="pl_top_row_nav_icon" /></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- top row ends here -->
+        <!-- top nav starts here -->
+        <div class="row">
+        	<div class="col-md-12 pl_1st_col_top_nav">
+                <li><a href="product_list_icons_all.html" class="pl_1st_col_top_nav_active">All Items</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="product_list_icons_all.html">Best Selling Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="product_list_icons_all.html">Most Search Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="product_list_icons_all.html">New Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="product_list_icons_all.html">Demand Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="product_list_icons_all.html">Popular Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="product_list_icons_all.html">Most Popular Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- top nav ends here -->
+        <!-- body details starts here -->
+        <div class="row pl_body_details_row">
+        	<div class="col-md-10 col-sm-10 col-xs-12 col-lg-10 pl_body_details_1st_col_outline" id="pl_icons_left_section">
+            	<div class="pl_row_each_part">
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme1.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme2.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme3.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme4" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pl_row_each_part">
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme1.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme2.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme3.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme4.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pl_row_each_part">
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme1.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme2.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme3.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme4.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pl_row_each_part">
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme1.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme2.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme3.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme4.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pl_row_each_part">
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme1.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme2.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme3.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 body_details_last_row_box_outline">
+                        <div class="body_details_last_row_sliding_box">
+                        	<div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <button class="body_last_row_price pull-left">$225</button>
+                                <img src="img/pl_row_arrow.png" class="pull-right"/>
+                                <div class="clearfix"></div>
+                            </div>
+                            <p class="body_details_last_row_small_desciption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <div class="body_details_bottom_part">
+                            	<button class="pull-left body_details_products_description_more_button">
+                                    <a href="nontang.html">More</a><i class="glyphicon glyphicon-play"></i>
+                                </button>
+                                <a href="cart.html"><div class="pull-right body_details_addtocart_outline">
+                                    <span class="pull-left body_details_addtocart_text">Add to cart</span>
+                                    <img src="img/pl_details_addtocart_icon.png" class="pull-right pl_details_addtocart_image" />
+                                    <div class="clearfix"></div>
+                                </div></a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="body_details_last_row_box">
+                            <img src="img/theme4.jpg" class="center-block img-responsive" />
+                            <div class="body_last_row_text">
+                                <div class="body_last_row_name pull-left">Lorem Ipsum</div>
+                                <div class="body_last_row_rating pull-right">
+                                    <li><img src="img/rated_star.png" /></li>
+                                    <li><img src="img/rated_star.png" /></li>                                    
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                    <li><img src="img/empty_rated_star.png" /></li>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <button class="body_last_row_price pull-left">$225</button>
+                            <img src="img/pl_row_arrow.png" class="pull-left pl_row_image_icon"/>
+                            <img src="img/pl_row_search_icon.png" class="pull-right pl_row_image_search" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12 col-lg-2 pl_body_details_last_col_outline">
+            	<h3 class="col-md-12 product_details_heading">Product Categories</h3>
+                <div class="col-md-12 pl_last_col_category_heading"><img src="img/pl_category_heading_icon.png" /><span>Main Category Name</span></div>
+                <div class="col-md-12 pl_last_col_sub_category_heading"><img src="img/pl_sub_category_heading_icon.png" class="rotating_image"/><span>Sub Category Name</span></div>
+                <div class="col-md-12 category_book_list">
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <h3 class="col-md-12 product_details_heading">Featured Products</h3>
+                <div class="col-md-12 product_details_box_outline">
+                	<img src="img/product_image1.png" class="center-block img-responsive" />
+                    <div class="product_details_box_text">
+                        <div class="product_details_box_name pull-left">Product Name</div>
+                        <div class="body_last_row_rating pull-right">
+                            <li><img src="img/rated_star.png" /></li>
+                            <li><img src="img/rated_star.png" /></li>                                    
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <button class="body_details_row_text_button product_buy_now_button">
+                    	<span>Buy Now</span>
+                        <img src="img/body_row_button_arrow.png" />
+                    </button>
+                </div>
+                <div class="col-md-12 product_details_box_outline">
+                	<img src="img/product_image1.png" class="center-block img-responsive" />
+                    <div class="product_details_box_text">
+                        <div class="product_details_box_name pull-left">Product Name</div>
+                        <div class="body_last_row_rating pull-right">
+                            <li><img src="img/rated_star.png" /></li>
+                            <li><img src="img/rated_star.png" /></li>                                    
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <button class="body_details_row_text_button product_buy_now_button">
+                    	<span>Buy Now</span>
+                        <img src="img/body_row_button_arrow.png" />
+                    </button>
+                </div>
+                <h3 class="col-md-12 product_details_heading">Most popular</h3>
+                <div class="col-md-6 product_details_small_left_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 product_details_small_right_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 product_details_box_outline">
+                	<img src="img/product_image1.png" class="center-block img-responsive" />
+                    <div class="product_details_box_text">
+                        <div class="product_details_box_name pull-left">Product Name</div>
+                        <div class="body_last_row_rating pull-right">
+                            <li><img src="img/rated_star.png" /></li>
+                            <li><img src="img/rated_star.png" /></li>                                    
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <button class="body_details_row_text_button product_buy_now_button">
+                    	<span>Buy Now</span>
+                        <img src="img/body_row_button_arrow.png" />
+                    </button>
+                </div>
+                <div class="col-md-6 product_details_small_left_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 product_details_small_right_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body details ends here -->
+        <!-- loading part starts here -->
+        <div class="row loading_part_row">
+        	<div class="col-md-2 col-md-push-5 col-sm-2 col-sm-push-5 col-xs-6 col-xs-push-3 col-lg-2 col-lg-push-5">
+            	<div class="loading_part_outline">
+                	<img src="img/loading.gif" />
+                    <span class="loading_part_text">loading</span>
+                </div>  
+            </div>
+        </div>
+        <!-- loading part ends here -->
+    </div>
+</div>
+<!-- body ends here -->
+</body>
+</html>

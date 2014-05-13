@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/header_logo.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome-ie7.css" />
+<link rel="stylesheet" type="text/css" href="dist/css/style.css" />
+<link rel="stylesheet" media="screen,projection" href="dist/css/ui.totop.css" />
+
+<!--Import the bootstrap JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="dist/js/bootstrap.js"></script>
+<script src="js/Ui_functions.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+
+
+
+
+<!-- zoomimage -->
+<link rel="stylesheet" media="screen" type="text/css" href="dist/new/css/layout.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="dist/new/css/zoomimage.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="dist/new/css/custom.css" />
+    <script type="text/javascript" src="new/js/jquery.js"></script>
+    <script type="text/javascript" src="new/js/eye.js"></script>
+    <script type="text/javascript" src="new/js/utils.js"></script>
+    <script type="text/javascript" src="new/js/zoomimage.js"></script>
+    <script type="text/javascript" src="new/js/layout.js"></script>
+<!-- end -->
+<title>MarketPlace | Product List</title>
+</head>
+
+<body>
+ <div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+
+  var js, fjs = d.getElementsByTagName(s)[0];
+
+  if (d.getElementById(id)) return;
+
+  js = d.createElement(s); js.id = id;
+
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=158675957655662";
+
+  fjs.parentNode.insertBefore(js, fjs);
+
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- header starts here -->
+    <div class="navbar navbar-inverse navbar-fixed-top header_navigation" id="header_outline" role="navigation">
+        <div class="container header_container">
+            <div class="row blog_header">
+                <div class="col-md-12 col-sm-12">
+                	<!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header_nav">
+
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand header_brand" href="index.html"><img src="img/header_logo.png" /></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="header_nav">
+                    	<ul class="nav navbar-nav header_dropdown_nav">
+                        	<li class="dropdown" id="nav_1st_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/1st_dropdown_arrow.png" /> <b class="caret caret_1st"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="nav_2nd_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Now <span class="dropdown_text_separater">|</span><b class="caret caret_2nd"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="nav_3rd_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Offers <span class="dropdown_text_separater dropdown_separater_color">|</span><b class="caret caret_3rd"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+							<li id="nav_text">or</li>
+                            <li class="dropdown" id="nav_5th_dropdown">
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">SELL <span class="dropdown_text_separater">|</span><b class="caret caret_2nd"></b></a>
+                                <ul class="dropdown-menu">
+                                	<li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav_form_outline">
+                            	<form class="navbar-form navbar-left" role="search">
+                                	<div class="form-group" id="nav_form_outline_form-group">
+                                    	<input type="text" class="form-control" id="nav_form_textbox" value="Search Products">
+                                    </div>
+                                </form>
+                            </li>
+                            <li id="nav_category_outline">
+                                <a href="#"><span>Category</span> <img src="img/category_icon_bar.png" /></a>
+                            </li>
+                            <li id="nav_question">
+                                <a href="#"><img src="img/nav_question.png" /></a>
+                            </li>
+                            <li id="nav_speaker">
+                                <a href="#"><img src="img/nav_speaker.png" /></a>
+                            </li>
+                            <li id="nav_profile">
+                                <a href="#"><img src="img/nav_profile.png" /></a>
+                            </li>
+                            <li id="nav_text_cart"><span>Cart</span><img src="img/nav_cart_image.png" /><span>100</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header ends here -->
+<!-- body starts here -->
+<div id="body_outline">
+	<div class="container">
+    	<!-- top nav starts here -->
+        <!--<div class="row">
+        	<div class="col-md-12 pl_1st_col_top_nav">
+                <li><a href="#" class="pl_1st_col_top_nav_active">All Items</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="#">Best Selling Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="#">Most Search Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="#">New Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="#">Demand Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="#">Popular Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <li><a href="#">Most Popular Products</a><span class="pl_top_nav_text_separater">|</span></li>
+                <div class="clearfix"></div>
+            </div>
+        </div>-->
+        <!-- top nav ends here -->
+        <!-- body details starts here -->
+        <div class="row pl_body_details_row">
+		
+        	<div class="col-md-10 col-sm-10 col-xs-12 col-lg-10 pd_body_details_1st_col_outline">
+            	<div class="pd_section_outline">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+                	<div class="col-md-6 col-sm-6 col-lg-6 col-xs-11 col-offset-xs-1">
+		
+						<a href="img/jeans-z.png" title="Ladies jeans" class="bwGal main-img img-responsive "><img src="img/jeans.jpg"/></a>
+					</div>	
+							<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12 rmvpad">
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+									<div class="custom-border">
+									</div>
+								</div>
+								<div class="col-md-1 col-sm-1 col-lg-1">
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										 
+										<a href="img/z1-a.png" title="zoom2" class="bwGal img-responsive sm-img"><img src="img/z1.png"/></a>
+									</div> 
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										 
+										<a href="img/z2-a.png" title="zoom2" class="bwGal img-responsive sm-img"><img src="img/z2.png"/></a>
+									</div>
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										 
+										<a href="img/z3-a.png" title="zoom3" class="bwGal img-responsive sm-img"><img src="img/z3.png"/></a>
+									</div>
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										
+										<a href="img/z4-a.png" title="zoom4" class="bwGal img-responsive sm-img"><img src="img/z4.png"/></a>
+									</div>
+								</div>
+								
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+									<div class="custom-border">
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+									<div class="custom-border">
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">	
+										<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 price-part"><span class="price-left">Ladies Jeans</span></div>
+										<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 price-part2"><span class="price-right">$1099</span></div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+									<div class="custom-border">
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 glyf">
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										<span class="glyphicon glyphicon-eye-open"></span> 2231
+									</div>
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										<span class="glyphicon glyphicon-shopping-cart"></span> 254
+									</div>
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										<span class=" glyphicon glyphicon-heart"></span> 6
+									</div>
+									<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3">
+										<span class="glyphicon glyphicon-comment"></span> 2
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 shipping">
+									
+										<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 price-part4"><span class="ship-left"><img class="rs" src="img/car.png"> Free shipping</span></div>
+										<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6 price-part3"><span class="ship-right">100% money back guarantee 30days return. </span></div>
+									
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 size-part">
+									<div class="col-md-11 col-xs-11 col-sm-11 col-sm-offset-1 col-md-offset-1 col-xs-offset-1">
+										
+											<nav class="navbar">
+												<ul class="nav navbar-nav custom-ul">
+												<li><a href="#">28</a></li>
+												<li><a href="#">30</a></li>
+												<li><a href="#">32</a></li>
+												<li><a href="#">34</a></li>
+												<li><a href="#">36</a></li>
+												<li><a href="#">38</a></li>
+												<li><a href="#">40</a></li>
+											</nav>
+										
+									</div>
+									<div class="size-txt">[ <span class="txt2">Please choose your size</span> ]</div>
+									<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+										<div class="custom-border2">
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 btn-center">
+										<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12"><button class="btn btn-default">Add to wishlist</button></div>
+										<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+												<button class="btn btn-lg pd_description_addtocart_outline">
+												<span class="pd_description_addtocart_text pull-left">Add To Cart</span>
+												<img src="img/nav_cart_image.png" class="pull-right pd_description_addtocart_icon">
+												<div class="clearfix"></div>
+											</button>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+										
+									
+								</div>
+								<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+										<div class="fb-comments" data-href="http://vyrazu.com/running-projects/marketplace/product_description.html" data-numposts="5" data-colorscheme="light"></div>
+								</div>
+								
+							</div>
+					</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pd_description_section_outline">
+                	<h4 class="pd_des_heading">Related Products</h4>
+					<div class="row topping">
+						  <div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="col-md-6 col-sm-6 col-xs-12" id="part1">
+									<img id="pic-o" class="img-responsive" src="img/jeans2.jpg">
+									<div class="col-md-11 col-sm-11 col-xs-12 product-description-title">Lorem epsum Jeans available!</div><span class="col-md-1 col-sm-1 side-price" id="sp1">$29.99</span>
+									<div class="col-md-12 col-sm-12 col-xs-12 product-description-price" id="price1">$29.99<br></div>
+									<div class="col-md-12 col-sm-12 col-xs-12 btn-align"><button type="submit" class="pro-add" id="pro1">Add to cart</button></div>
+									
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-12" id="part2">
+									<img class="img-responsive" src="img/jeans3.jpg">
+									<div class="col-md-11 col-sm-11 col-xs-12 product-description-title">Lorem epsum Jeans available!</div><span class="col-md-1 col-sm-1 side-price" id="sp2">$29.99</span>
+									<div class="col-md-12 col-sm-12 col-xs-12 product-description-price" id="price2">$29.99<br></div>
+									<div class="col-md-12 col-sm-12 col-xs-12 btn-align"><button type="submit" class="pro-add" id="pro2">Add to cart</button></div>
+								</div>
+						</div>
+					</div>
+					<div class="row topping">
+						  <div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="col-md-6 col-sm-6 col-xs-12" id="part3">
+									<img class="img-responsive" src="img/jeans4.jpg">
+									<div class="col-md-11 col-sm-11 col-xs-12 product-description-title">Lorem epsum Jeans available!</div><span class="col-md-1 col-sm-1 side-price" id="sp3">$29.99</span>
+									<div class="col-md-12 col-sm-12 col-xs-12 product-description-price" id="price3">$29.99<br></div>
+									<div class="col-md-12 col-sm-12 col-xs-12 btn-align"><button type="submit" class="pro-add" id="pro3">Add to cart</button></div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-12" id="part4">
+									<img class="img-responsive" src="img/jeans5.jpg">
+									<div class="col-md-11 col-sm-11 col-xs-11 product-description-title">Lorem epsum Jeans available!</div><span class="col-md-1 col-sm-1 side-price" id="sp4">$29.99</span>
+									<div class="col-md-12 col-sm-12 col-xs-12 product-description-price" id="price4">$29.99<br></div>
+									<div class="col-md-12 col-sm-12 col-xs-12 btn-align"><button type="submit" class="pro-add" id="pro4">Add to cart</button></div>
+								</div>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12 col-lg-2 pl_body_details_last_col_outline">
+            	<h3 class="col-md-12 product_details_heading">Product Categories</h3>
+                <div class="col-md-12 pl_last_col_category_heading"><img src="img/pl_category_heading_icon.png" /><span>Main Category Name</span></div>
+                <div class="col-md-12 pl_last_col_sub_category_heading"><img src="img/pl_sub_category_heading_icon.png" class="rotating_image"/><span>Sub Category Name</span></div>
+                <div class="col-md-12 category_book_list rmvpad">
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="col-md-12 pl_category_details_outline">
+                        <span class="pl_category_details_text">Book</span>
+                        <button class="pl_category_details_value">2826782</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <h3 class="col-md-12 product_details_heading">Featured Products</h3>
+                <div class="col-md-12 product_details_box_outline">
+                	<img src="img/product_image1.png" class="center-block img-responsive" />
+                    <div class="product_details_box_text">
+                        <div class="product_details_box_name pull-left">Product Name</div>
+                        <div class="body_last_row_rating pull-right">
+                            <li><img src="img/rated_star.png" /></li>
+                            <li><img src="img/rated_star.png" /></li>                                    
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <button class="body_details_row_text_button product_buy_now_button">
+                    	<span>Buy Now</span>
+                        <img src="img/body_row_button_arrow.png" />
+                    </button>
+                </div>
+                <div class="col-md-12 product_details_box_outline">
+                	<img src="img/product_image1.png" class="center-block img-responsive" />
+                    <div class="product_details_box_text">
+                        <div class="product_details_box_name pull-left">Product Name</div>
+                        <div class="body_last_row_rating pull-right">
+                            <li><img src="img/rated_star.png" /></li>
+                            <li><img src="img/rated_star.png" /></li>                                    
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <button class="body_details_row_text_button product_buy_now_button">
+                    	<span>Buy Now</span>
+                        <img src="img/body_row_button_arrow.png" />
+                    </button>
+                </div>
+                <h3 class="col-md-12 product_details_heading">Most popular</h3>
+                <div class="col-md-6 product_details_small_left_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 product_details_small_right_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 product_details_box_outline">
+                	<img src="img/product_image1.png" class="center-block img-responsive" />
+                    <div class="product_details_box_text">
+                        <div class="product_details_box_name pull-left">Product Name</div>
+                        <div class="body_last_row_rating pull-right">
+                            <li><img src="img/rated_star.png" /></li>
+                            <li><img src="img/rated_star.png" /></li>                                    
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                            <li><img src="img/empty_rated_star.png" /></li>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <button class="body_details_row_text_button product_buy_now_button">
+                    	<span>Buy Now</span>
+                        <img src="img/body_row_button_arrow.png" />
+                    </button>
+                </div>
+                <div class="col-md-6 product_details_small_left_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 product_details_small_right_box">
+                	<div class="product_details_box_outline">
+                    	<img src="img/product_image2.png" class="center-block img-responsive" />
+                        <div class="product_details_box_text">
+                        	<button class="body_details_row_text_button product_buy_now_button_small pull-left">
+                                <span>Buy Now</span>
+                                <img src="img/body_row_button_arrow.png" />
+                            </button>
+                            <div class="body_last_row_rating pull-right">
+                                <li><img src="img/rated_star_small.png" /></li>
+                                <li><img src="img/rated_star_small.png" /></li>                                    
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                                <li><img src="img/empty_rated_star_small.png" /></li>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<a id="toTop" href="#" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
+        </div>
+        <!-- body details end here -->
+	</div>
+</div>
+<script>
+	$('a.bwGal').zoomimage({
+	centered: true,
+	hideSource: true,
+});
+</script>
+<!-- jquery -->	
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<!-- easing plugin ( optional ) -->
+	<script src="js/easing.js" type="text/javascript"></script>
+	<!-- UItoTop plugin -->
+	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+	<!-- Starting the plugin -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+	 		};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+      <script>
+		
+			$("#part1").hover(function() {
+			$("#pro1").show();
+			$("#price1").hide();
+			$("#sp1").show();
+			},function(){
+			$("#pro1").hide();
+			$("#price1").show();
+			$("#sp1").hide();
+		});
+		$("#part2").hover(function() {
+			$("#pro2").show();
+			$("#price2").hide();
+			$("#sp2").show();
+			},function(){
+			$("#pro2").hide();
+			$("#price2").show();
+			$("#sp2").hide();
+		});
+		$("#part3").hover(function() {
+			$("#pro3").show();
+			$("#price3").hide();
+			$("#sp3").show();
+			},function(){
+			$("#pro3").hide();
+			$("#price3").show();
+			$("#sp3").hide();
+		});
+		$("#part4").hover(function() {
+			$("#pro4").show();
+			$("#price4").hide();
+			$("#sp4").show();
+			},function(){
+			$("#pro4").hide();
+			$("#price4").show();
+			$("#sp4").hide();
+		});
+	
+		
+	</script>
+<!-- body ends here -->
+</body>
+</html>
